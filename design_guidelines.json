@@ -1,0 +1,113 @@
+{
+  "theme": "Light",
+  "archetype": "1 (Organic & Earthy)",
+  "colors": {
+    "background": "#F9F8F6",
+    "surface": "#FFFFFF",
+    "primary": "#4A7C59",
+    "primary_hover": "#3A6347",
+    "secondary": "#E8ECE9",
+    "accent_warning": "#C05746",
+    "accent_warning_light": "#FADED9",
+    "text_primary": "#2C302E",
+    "text_secondary": "#6B706D",
+    "border": "#E5E5E5"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Outfit",
+      "weights": ["500", "600", "700"],
+      "h1": "text-4xl tracking-tight leading-none",
+      "h2": "text-3xl tracking-tight leading-tight",
+      "h3": "text-xl font-medium tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope",
+      "weights": ["400", "500", "600"],
+      "base": "text-base leading-relaxed",
+      "small": "text-sm leading-normal",
+      "micro": "text-xs uppercase tracking-[0.2em]"
+    }
+  },
+  "spacing_and_layout": {
+    "screen_padding": "p-6",
+    "section_gap": "gap-8",
+    "element_gap": "gap-4",
+    "border_radius": {
+      "card": "rounded-3xl",
+      "button": "rounded-full",
+      "input": "rounded-2xl",
+      "chip": "rounded-full"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#4A7C59] text-white rounded-full py-4 px-6 font-semibold active:opacity-80 transition-opacity flex items-center justify-center shadow-md",
+      "secondary": "bg-[#E8ECE9] text-[#2C302E] rounded-full py-4 px-6 font-medium active:bg-gray-200 transition-colors",
+      "ghost": "bg-transparent text-[#6B706D] font-medium"
+    },
+    "cards": {
+      "default": "bg-white rounded-3xl p-6 border border-[#E5E5E5] shadow-sm",
+      "highlight": "bg-[#4A7C59] text-white rounded-3xl p-6 shadow-md",
+      "warning": "bg-[#FADED9] border border-[#C05746] rounded-3xl p-6 text-[#2C302E]"
+    },
+    "inputs": {
+      "text": "bg-white border border-[#E5E5E5] rounded-2xl px-5 py-4 text-base focus:border-[#4A7C59] focus:ring-1 focus:ring-[#4A7C59]",
+      "amount": "text-4xl font-bold bg-transparent border-b-2 border-[#E5E5E5] focus:border-[#4A7C59] py-2 text-center text-[#2C302E]"
+    },
+    "bottom_navigation": {
+      "container": "bg-white/90 backdrop-blur-xl border-t border-[#E5E5E5] pb-safe pt-3 px-6 flex justify-between items-center rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)]",
+      "item": "flex flex-col items-center gap-1",
+      "active_icon": "text-[#4A7C59]",
+      "inactive_icon": "text-[#6B706D]"
+    },
+    "chips": {
+      "active": "bg-[#2C302E] text-white rounded-full px-4 py-2 text-sm font-medium",
+      "inactive": "bg-white border border-[#E5E5E5] text-[#6B706D] rounded-full px-4 py-2 text-sm font-medium"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "active_state": "active:scale-[0.98]"
+  },
+  "media": {
+    "icons_library": "lucide-react",
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.pexels.com/photos/11774099/pexels-photo-11774099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Soft blue/green abstract blur for calm background moments, like the AI suggestions screen"
+      },
+      {
+        "category": "empty_state_receipt",
+        "url": "https://images.unsplash.com/photo-1545941962-1b6654eb8072?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcmVjZWlwdHxlbnwwfHx8fDE3ODA5MjM4NDV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist receipt for empty state of transactions list"
+      },
+      {
+        "category": "success_growth",
+        "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxwbGFudCUyMGdyb3dpbmd8ZW58MHx8fHwxNzgwOTIzODQ1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Plant growing for budget success or savings achieved"
+      }
+    ]
+  },
+  "screens_and_features": {
+    "dashboard": "Thumb-zone bottom navigation. Top area shows current weekly spend in large typography (Outfit). Quick 'Add Expense' floating action button or prominent card. Recent transactions listed below with clean minimalist rows.",
+    "add_expense": "Focuses heavily on the amount input first (huge text), followed by category chips horizontally scrollable. Includes date picker and notes.",
+    "ai_suggestions": "Uses the calm abstract background with glassmorphism cards (bg-white/70 backdrop-blur-xl). Provides narrative data storytelling (e.g., 'You spent 20% less on food this week').",
+    "stats": "Donut chart for categories, bar chart for daily breakdown. Use Shadcn charts or Recharts. Colors of chart slices should use variations of primary and secondary, avoiding jarring neon colors.",
+    "budget_alert": "If nearing limit, show a sticky top banner or inline card using the 'warning' card style (Terracotta accent)."
+  },
+  "testing_attributes": {
+    "rule": "All interactive and key informational elements MUST include a data-testid attribute.",
+    "examples": ["data-testid='add-expense-button'", "data-testid='weekly-total-text'", "data-testid='category-chip-food'"]
+  },
+  "instructions_to_main_agent": [
+    "Build the UI focusing on a mobile-first experience. Use the specified generic mobile layout with bottom navigation.",
+    "Rely heavily on 'Outfit' font for numbers and headers to ensure a modern, polished look.",
+    "Ensure all buttons and touchable areas have a minimum height of 48px for mobile accessibility.",
+    "Do NOT use pure black or generic blue. Follow the Organic & Earthy color palette.",
+    "Use Shadcn UI where applicable, customizing the border radius to rounded-3xl for cards.",
+    "Ensure the budget limit notification uses the warning palette (#C05746) to provide clear contrast and urgency without being overly aggressive.",
+    "Add 'data-testid' to all interactive elements."
+  ]
+}
