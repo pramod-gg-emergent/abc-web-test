@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).resolve().parents[2] / "frontend" / ".env")
 
 # Public external URL for testing (as provided in review request)
-PUBLIC_URL = "https://8f89aca5-4984-413b-b178-43fede044b5b.preview.emergentagent.com"
+PUBLIC_URL = "https://expense-tracker-fix-13.preview.emergentagent.com"
 BASE_URL = PUBLIC_URL.rstrip("/")
 
 
